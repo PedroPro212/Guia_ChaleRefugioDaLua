@@ -71,28 +71,31 @@
         }
 
         .hero {
-            min-height: 35vh;
+            min-height: 50vh;
 
             background:
                 linear-gradient(
-                    rgba(0,0,0,.75),
-                    rgba(0,0,0,.75)
+                    rgba(0,0,0,.55),
+                    rgba(0,0,0,.85)
                 ),
                 url('imgs/8.jpeg');
 
             background-size: cover;
-            background-position: center;
+            background-position: center center;
 
             display: flex;
             align-items: center;
             justify-content: center;
+
             text-align: center;
+
+            padding: 60px 25px;
 
             border-bottom: 1px solid rgba(255,255,255,.08);
         }
 
         .hero-content {
-            max-width: 900px;
+            max-width: 700px;
         }
 
         .hero span {
@@ -104,8 +107,12 @@
         .hero h1 {
             font-family: 'Cormorant Garamond', serif;
             font-size: 5rem;
-            margin: 20px 0;
             font-weight: 600;
+
+            margin: 15px 0;
+
+            text-shadow:
+                0 5px 20px rgba(0,0,0,.6);
         }
 
         .hero p {
@@ -289,12 +296,38 @@
 
         @media(max-width:768px) {
 
+            .hero {
+                min-height: 45vh;
+                padding: 40px 20px;
+            }
+
+            .hero span {
+                font-size: .75rem;
+                letter-spacing: 3px;
+            }
+
             .hero h1 {
-                font-size: 3.5rem;
+                font-size: 2.7rem;
+                line-height: 1;
+                margin: 12px 0;
+            }
+
+            .hero p {
+                font-size: .9rem;
+                line-height: 1.6;
+                max-width: 320px;
+            }
+
+            .scroll-btn {
+                margin-top: 25px;
+
+                padding: 12px 22px;
+
+                font-size: .9rem;
             }
 
             .section-title h2 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
 
             .info-header h2 {
@@ -322,7 +355,7 @@
             }
 
             .card p {
-                font-size: 0.75rem;
+                display: none;
             }
         }
     </style>
